@@ -1,12 +1,8 @@
 
 import { UserRecord } from '../models/types';
 
-const USER_SERVICE_URL = "http://localhost:8081/register";
+const USER_SERVICE_URL = "http://localhost:8081/register"
 
-/**
- * Service to handle user registration via the Spring Boot User Service.
- * Attempts a real API call and falls back to mock data if the server is unreachable.
- */
 export const registerUser = async (name: string, email: string): Promise<UserRecord> => {
   try {
     const response = await fetch(USER_SERVICE_URL, {
