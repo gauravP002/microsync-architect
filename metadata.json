@@ -1,0 +1,5 @@
+{
+  "name": "MicroSync Architect",
+  "description": "An interactive architectural playground and code generator for building event-driven microservices with Spring Boot, Kafka, and PostgreSQL.",
+  "requestFramePermissions": []
+}
